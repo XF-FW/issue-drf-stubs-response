@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "issue-drf-stubs-response"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.3"
+django-stubs = "~1.9.0"
+djangorestframework = "^3.13.1"
+djangorestframework-stubs = "^1.4.0"
+mypy = "^0.942"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+strict = true
+plugins = [
+  "mypy_django_plugin.main",
+  "mypy_drf_plugin.main",
+]
+
+[tool.django-stubs]
+django_settings_module = "minimal.settings"
+

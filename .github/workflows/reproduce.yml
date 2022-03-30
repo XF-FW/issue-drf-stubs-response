@@ -1,0 +1,29 @@
+name: Reproduce
+
+on: [push]
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python version
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test
+        run: ./manage.py test
+
+      # Spoiler: It will fail
+      - name: TypeChecking - mypy
+        run: mypy .
