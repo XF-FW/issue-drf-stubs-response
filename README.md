@@ -1,0 +1,1 @@
+# issue-drf-stubs-response
