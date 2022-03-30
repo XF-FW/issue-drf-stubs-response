@@ -8,13 +8,9 @@
 
 `poetry run mypy .`
 
-## Why is django-stubs not in the latest version?
+## Issue in question
 
-https://github.com/typeddjango/djangorestframework-stubs/issues/202
-
-## Have you tried upgrading django-stubs and not using the drf-stubs plugin?
-
-Yes.
+https://github.com/typeddjango/djangorestframework-stubs/issues/204
 
 ## I don't want to use poetry.
 
