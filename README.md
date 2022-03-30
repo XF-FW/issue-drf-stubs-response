@@ -21,4 +21,5 @@ There's a requirements.txt and for all commands mentioned here, remove the `poet
 ## I don't want to install anything to reproduce the error.
 
 That's fine.
-There's a github action that reproduces it. Check the actions tab.
+There's a github action that reproduces it. Check the actions tab or click here:  
+https://github.com/XF-FW/issue-drf-stubs-response/runs/5759647545?check_suite_focus=true
