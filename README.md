@@ -15,7 +15,7 @@ https://github.com/typeddjango/djangorestframework-stubs/issues/204
 ## I don't want to use poetry.
 
 That's fine.
-There's a requirements.txt and for all commands remove the `poetry run` prefix.
+There's a requirements.txt and for all commands mentioned here, remove the `poetry run` prefix.
 
 
 ## I don't want to install anything to reproduce the error.
